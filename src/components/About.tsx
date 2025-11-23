@@ -43,7 +43,7 @@ export function About() {
             <div className="relative overflow-hidden rounded-3xl border border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 backdrop-blur-sm p-2">
               <div className="aspect-square bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center overflow-hidden">
                 <ImageWithFallback
-                  src="public/me.jpeg"
+                  src="/me.jpeg"
                   alt="Sachintha Dissanayaka"
                   className="w-full h-full object-cover"
                 />
