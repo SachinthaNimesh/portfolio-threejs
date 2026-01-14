@@ -171,7 +171,7 @@ export function Hero({ scrollY }: HeroProps) {
             <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "public/Sachintha Dissanayaka CV.pdf"; // file placed at public/cv.pdf
+                link.href = "public/CV.pdf"; // file placed at public/cv.pdf
                 link.download = "Sachintha_Dissanayaka_CV.pdf";
                 document.body.appendChild(link);
                 link.click();

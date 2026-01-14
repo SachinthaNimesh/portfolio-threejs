@@ -13,8 +13,17 @@ export function Projects() {
       description:
         "Built at WSO2 using React Native, Golang, PostgreSQL, and Choreo platform. Features Azure authentication and modern UI/UX.",
       tags: ["React Native", "Golang", "PostgreSQL", "Azure"],
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      image: "public/worky.jpeg",
+      github: "https://github.com/sjdsf-dev/Student-Management-System",
+    },
+    {
+      title: "Computer Use Agent",
+      subtitle: "Automated Research Tool",
+      description:
+        "Built an autonomous AI agent using Google Gemini 2.5 that controls browsers to perform web research tasks",
+      tags: ["Python", "Google Gemini 2.5", "Playwright"],
+      image: "public/computer-use-agent.jpeg",
+      github: "https://github.com/SachinthaNimesh/computer-use-agent",
     },
     {
       title: "Exam Registration Portal",
@@ -22,8 +31,16 @@ export function Projects() {
       description:
         "Full-stack web application built with .NET, MySQL, and Blazor for streamlined exam registration process.",
       tags: [".NET", "MySQL", "Blazor"],
-      image:
-        "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=400&fit=crop",
+      image: "public/ExamRegSystem.png",
+      github: "https://github.com/AthulyaWeerakoon/ExamRegistrationUoJ",
+      externalLink: "https://athulyaweerakoon.xyz/exam-registration",
+    },
+    {
+      title: "Admin Dashboard",
+      subtitle: "Admin Dashboard for an E-Commerce platform",
+      description: "Built at Flexaro using React.",
+      tags: ["HTML", "CSS", "React"],
+      image: "public/AdminDB.jpeg",
     },
     {
       title: "Mate Chatbot",
@@ -33,6 +50,7 @@ export function Projects() {
       tags: ["LangChain", "OpenAI", "ChromaDB", "RAG"],
       image:
         "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop",
+      github: "https://github.com/SachinthaNimesh/mate-rag-chatbot",
     },
     {
       title: "Big Data ECG Analytics",
@@ -51,6 +69,7 @@ export function Projects() {
       tags: ["MongoDB", "Express", "React", "Node.js"],
       image:
         "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop",
+      github: "https://github.com/SachinthaNimesh/BNB-APP",
     },
   ];
 
@@ -92,12 +111,26 @@ export function Projects() {
 
                   {/* Overlay Icons */}
                   <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <button className="p-2 rounded-full bg-cyan-500/20 backdrop-blur-sm border border-cyan-500/50 hover:bg-cyan-500/30 transition-all duration-300">
-                      <Github size={20} className="text-cyan-400" />
-                    </button>
-                    <button className="p-2 rounded-full bg-cyan-500/20 backdrop-blur-sm border border-cyan-500/50 hover:bg-cyan-500/30 transition-all duration-300">
-                      <ExternalLink size={20} className="text-cyan-400" />
-                    </button>
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 rounded-full bg-cyan-500/20 backdrop-blur-sm border border-cyan-500/50 hover:bg-cyan-500/30 transition-all duration-300 flex items-center justify-center"
+                      >
+                        <Github size={20} className="text-cyan-400" />
+                      </a>
+                    )}
+                    {project.externalLink && (
+                      <a
+                        href={project.externalLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 rounded-full bg-cyan-500/20 backdrop-blur-sm border border-cyan-500/50 hover:bg-cyan-500/30 transition-all duration-300 flex items-center justify-center"
+                      >
+                        <ExternalLink size={20} className="text-cyan-400" />
+                      </a>
+                    )}
                   </div>
                 </div>
 

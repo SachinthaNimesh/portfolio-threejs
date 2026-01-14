@@ -141,7 +141,7 @@ export function Contact() {
                 type="submit"
                 className="group w-full px-8 py-4 bg-cyan-500 text-black rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(0,255,255,0.5)] flex items-center justify-center gap-3"
               >
-                <span>Send Message</span>
+                <span>Send Message (Under Construction 👷‍♂️)</span>
                 <Send
                   size={20}
                   className="group-hover:translate-x-1 transition-transform duration-300"

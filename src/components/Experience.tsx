@@ -1,22 +1,32 @@
-import { motion } from 'motion/react';
-import { useInView } from '../hooks/useInView';
-import { Briefcase, Calendar } from 'lucide-react';
+import { motion } from "motion/react";
+import { useInView } from "../hooks/useInView";
+import { Briefcase, Calendar } from "lucide-react";
 
 export function Experience() {
   const [ref, isInView] = useInView({ threshold: 0.2 });
 
   const experiences = [
     {
-      company: 'WSO2',
-      position: 'Software Engineer Intern',
-      period: '2025',
+      company: "Flexaro",
+      position: "Frontend Developer",
+      period: "2024",
       description: [
-        'Built trainee management system using React Native, Golang, PostgreSQL, and WSO2 Choreo',
-        'Integrated Azure authentication for secure user access',
-        'Designed UI/UX using Figma with modern design principles',
-        'Conducted client meetings and product demos',
+        "Designed and developed custom WordPress plugins.",
+        "Created responsive dashboards using HTML, CSS, JavaScript, and React.",
       ],
-      color: 'cyan',
+      color: "cyan",
+    },
+    {
+      company: "WSO2",
+      position: "Software Engineer Intern",
+      period: "2025",
+      description: [
+        "Built trainee management system using React Native, Golang, PostgreSQL, and WSO2 Choreo",
+        "Integrated Azure authentication for secure user access",
+        "Designed UI/UX using Figma with modern design principles",
+        "Conducted client meetings and product demos",
+      ],
+      color: "cyan",
     },
   ];
 
@@ -58,7 +68,9 @@ export function Experience() {
                   <div className="p-8 rounded-3xl bg-gradient-to-br from-gray-900/80 to-gray-800/80 backdrop-blur-sm border border-cyan-500/30 hover:border-cyan-400 transition-all duration-500 hover:shadow-[0_0_40px_rgba(0,255,255,0.2)]">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                       <div>
-                        <h3 className="text-3xl text-cyan-400 mb-2">{exp.position}</h3>
+                        <h3 className="text-3xl text-cyan-400 mb-2">
+                          {exp.position}
+                        </h3>
                         <div className="flex items-center gap-2 text-gray-400">
                           <Briefcase size={18} />
                           <span className="text-xl">{exp.company}</span>
@@ -72,7 +84,10 @@ export function Experience() {
 
                     <ul className="space-y-3">
                       {exp.description.map((item, i) => (
-                        <li key={i} className="flex items-start gap-3 text-gray-300">
+                        <li
+                          key={i}
+                          className="flex items-start gap-3 text-gray-300"
+                        >
                           <span className="text-cyan-400 mt-1">▹</span>
                           <span>{item}</span>
                         </li>

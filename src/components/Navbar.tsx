@@ -32,12 +32,14 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <a href="#hero" className="text-xl tracking-wider">
-            <span className="text-cyan-400">SD</span>
-            <span className="text-white ml-1"></span>
+          <a href="#hero" className="text-xl tracking-wider flex items-center">
+            {/* Logo */}
+            <img
+              src="public/sd-new.png"
+              alt="Logo"
+              className="w-10 h-10 object-contain z-50"
+            />
           </a>
-
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
