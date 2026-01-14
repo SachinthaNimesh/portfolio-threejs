@@ -13,7 +13,7 @@ export function Projects() {
       description:
         "Built at WSO2 using React Native, Golang, PostgreSQL, and Choreo platform. Features Azure authentication and modern UI/UX.",
       tags: ["React Native", "Golang", "PostgreSQL", "Azure"],
-      image: "public/worky.jpeg",
+      image: "/worky.jpeg",
       github: "https://github.com/sjdsf-dev/Student-Management-System",
     },
     {
@@ -22,7 +22,7 @@ export function Projects() {
       description:
         "Built an autonomous AI agent using Google Gemini 2.5 that controls browsers to perform web research tasks",
       tags: ["Python", "Google Gemini 2.5", "Playwright"],
-      image: "public/computer-use-agent.jpeg",
+      image: "/computer-use-agent.jpeg",
       github: "https://github.com/SachinthaNimesh/computer-use-agent",
     },
     {
@@ -31,7 +31,7 @@ export function Projects() {
       description:
         "Full-stack web application built with .NET, MySQL, and Blazor for streamlined exam registration process.",
       tags: [".NET", "MySQL", "Blazor"],
-      image: "public/ExamRegSystem.png",
+      image: "/ExamRegSystem.png",
       github: "https://github.com/AthulyaWeerakoon/ExamRegistrationUoJ",
       externalLink: "https://athulyaweerakoon.xyz/exam-registration",
     },
@@ -40,7 +40,7 @@ export function Projects() {
       subtitle: "Admin Dashboard for an E-Commerce platform",
       description: "Built at Flexaro using React.",
       tags: ["HTML", "CSS", "React"],
-      image: "public/AdminDB.jpeg",
+      image: "/AdminDB.jpeg",
     },
     {
       title: "Mate Chatbot",

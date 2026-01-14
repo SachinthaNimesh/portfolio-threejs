@@ -35,7 +35,7 @@ export function Navbar() {
           <a href="#hero" className="text-xl tracking-wider flex items-center">
             {/* Logo */}
             <img
-              src="public/sd-new.png"
+              src="/sd-new.png"
               alt="Logo"
               className="w-10 h-10 object-contain z-50"
             />
